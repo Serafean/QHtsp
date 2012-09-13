@@ -44,8 +44,8 @@ public:
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
 
-    Q_INVOKABLE QHtspTag *getTagById(qint64 id);
-    Q_INVOKABLE QHtspTag *getTagByIndex(int i);
+    Q_INVOKABLE QHtspTag *getTagById(qint64 id) const;
+    Q_INVOKABLE QHtspTag *getTagByIndex(int i) const;
 
 private:
     QHtspTagList *m_tags;

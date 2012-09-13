@@ -72,11 +72,11 @@ public:
     QHtspTag(QHtspMessage &message, QHtsp *htsp, QObject *parent = 0);
     QHtspTag(const QHtspTag &tag, QObject *parent = 0);
     
-    QHtspChannelList *channels();
+    QHtspChannelList *channels() const;
     QHtspChannelModel *channelsModel();
-    QString iconUrl();
-    qint64 id();
-    QString name();
+    QString iconUrl() const;
+    qint64 id() const;
+    QString name() const;
 
     void setIconUrl(QString url);
     void setId(qint64 id);

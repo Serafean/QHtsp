@@ -95,12 +95,12 @@ int QHtspTagModel::rowCount(const QModelIndex &/*parent*/) const
     return m_tags->count();
 }
 
-QHtspTag *QHtspTagModel::getTagById(qint64 id)
+QHtspTag *QHtspTagModel::getTagById(qint64 id) const
 {
     return m_tags->find(id);
 }
 
-QHtspTag *QHtspTagModel::getTagByIndex(int i)
+QHtspTag *QHtspTagModel::getTagByIndex(int i) const
 {
     return m_tags->at(i);
 }

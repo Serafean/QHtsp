@@ -35,22 +35,22 @@ QHtspTag *QHtspTagList::add(QHtsp *htsp, QHtspMessage &message)
     return tag;
 }
 
-QHtspTag *QHtspTagList::at(int i)
+QHtspTag *QHtspTagList::at(int i) const
 {
     return m_tags.at(i);
 }
 
-int QHtspTagList::count()
+int QHtspTagList::count() const
 {
     return m_tags.count();
 }
 
-int QHtspTagList::indexOf(QHtspTag *tag)
+int QHtspTagList::indexOf(QHtspTag *tag) const
 {
     return m_tags.indexOf(tag);
 }
 
-QHtspTag *QHtspTagList::find(qint64 id)
+QHtspTag *QHtspTagList::find(qint64 id) const
 {
     int i;
 

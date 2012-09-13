@@ -30,10 +30,10 @@ class QHtspTagList : public QObject
 public:
     explicit QHtspTagList(QObject *parent = 0);
 
-    QHtspTag *at(int i);
-    int count();
-    int indexOf(QHtspTag *tag);
-    QHtspTag *find(qint64 id);
+    QHtspTag *at(int i) const;
+    int count() const;
+    int indexOf(QHtspTag *tag) const;
+    QHtspTag *find(qint64 id) const;
 
 signals:
     void added(QHtspTag *tag);

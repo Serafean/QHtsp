@@ -41,7 +41,7 @@ QHtspTag::QHtspTag(const QHtspTag &tag, QObject *parent) :
     d = tag.d;
 }
 
-QHtspChannelList *QHtspTag::channels()
+QHtspChannelList *QHtspTag::channels() const
 {
     return d->channels;
 }
@@ -54,17 +54,17 @@ QHtspChannelModel *QHtspTag::channelsModel()
     return m_channelsModel;
 }
 
-QString QHtspTag::iconUrl()
+QString QHtspTag::iconUrl() const
 {
     return d->iconUrl;
 }
 
-qint64 QHtspTag::id()
+qint64 QHtspTag::id() const
 {
     return d->id;
 }
 
-QString QHtspTag::name()
+QString QHtspTag::name() const
 {
     return d->name;
 }
