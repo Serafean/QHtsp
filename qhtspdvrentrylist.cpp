@@ -34,22 +34,22 @@ QHtspDvrEntry *QHtspDvrEntryList::add(QHtsp *htsp, QHtspMessage &message)
     return dvrEntry;
 }
 
-QHtspDvrEntry *QHtspDvrEntryList::at(int i)
+QHtspDvrEntry *QHtspDvrEntryList::at(int i) const
 {
     return m_dvrEntries.at(i);
 }
 
-int QHtspDvrEntryList::count()
+int QHtspDvrEntryList::count() const
 {
     return m_dvrEntries.count();
 }
 
-int QHtspDvrEntryList::indexOf(QHtspDvrEntry *dvrEntry)
+int QHtspDvrEntryList::indexOf(QHtspDvrEntry* dvrEntry) const
 {
     return m_dvrEntries.indexOf(dvrEntry);
 }
 
-QHtspDvrEntry *QHtspDvrEntryList::find(qint64 id)
+QHtspDvrEntry *QHtspDvrEntryList::find(qint64 id) const
 {
     int i;
 

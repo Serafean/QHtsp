@@ -30,10 +30,10 @@ class QHtspDvrEntryList : public QObject
 public:
     explicit QHtspDvrEntryList(QObject *parent = 0);
 
-    QHtspDvrEntry *at(int i);
-    int count();
-    int indexOf(QHtspDvrEntry *dvrEntry);
-    QHtspDvrEntry *find(qint64 id);
+    QHtspDvrEntry *at(int i) const;
+    int count() const;
+    int indexOf(QHtspDvrEntry *dvrEntry) const;
+    QHtspDvrEntry *find(qint64 id) const;
 
 signals:
     void added(QHtspDvrEntry *channel);
