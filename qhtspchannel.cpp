@@ -42,47 +42,47 @@ QHtspChannel::QHtspChannel(const QHtspChannel& channel, QObject *parent) :
     _connectSignals();
 }
 
-QHtspEvent *QHtspChannel::event()
+QHtspEvent *QHtspChannel::event() const
 {
     return d->event();
 }
 
-QHtspEventList *QHtspChannel::events()
+QHtspEventList *QHtspChannel::events() const
 {
     return d->events;
 }
 
-QHtspEventModel *QHtspChannel::eventsModel()
+QHtspEventModel *QHtspChannel::eventsModel() const
 {
     return d->eventsModel();
 }
 
-qint64 QHtspChannel::eventId()
+qint64 QHtspChannel::eventId() const
 {
     return d->eventId;
 }
 
-QString QHtspChannel::iconUrl()
+QString QHtspChannel::iconUrl() const
 {
     return d->iconUrl;
 }
 
-qint64 QHtspChannel::id()
+qint64 QHtspChannel::id() const
 {
     return d->id;
 }
 
-QString QHtspChannel::name()
+QString QHtspChannel::name() const
 {
     return d->name;
 }
 
-qint64 QHtspChannel::number()
+qint64 QHtspChannel::number() const
 {
     return d->number;
 }
 
-QHtspService *QHtspChannel::service()
+QHtspService *QHtspChannel::service() const
 {
     return d->service;
 }

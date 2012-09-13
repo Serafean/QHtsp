@@ -89,15 +89,15 @@ public:
     QHtspChannel(QHtspMessage &message, QHtsp *htsp, QObject *parent = 0);
     QHtspChannel(const QHtspChannel &channel, QObject *parent = 0);
 
-    QHtspEvent *event();
-    QHtspEventList *events();
-    QHtspEventModel *eventsModel();
-    qint64 eventId();
-    QString iconUrl();
-    qint64 id();
-    QString name();
-    qint64 number();
-    QHtspService *service();
+    QHtspEvent *event() const;
+    QHtspEventList *events() const;
+    QHtspEventModel *eventsModel() const;
+    qint64 eventId() const;
+    QString iconUrl() const;
+    qint64 id() const;
+    QString name() const;
+    qint64 number() const;
+    QHtspService *service() const;
 
     void setEventId(qint64 eventId);
     void setIconUrl(QString url);
