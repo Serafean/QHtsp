@@ -30,10 +30,10 @@ class QHtspChannelList : public QObject
 public:
     explicit QHtspChannelList(QObject *parent = 0);
     
-    QHtspChannel *at(int i);
-    int count();
-    int indexOf(QHtspChannel *channel);
-    QHtspChannel *find(qint64 id);
+    QHtspChannel *at(int i) const;
+    int count() const;
+    int indexOf() const;
+    QHtspChannel *find(qint64 id) const;
 
 signals:
     void added(QHtspChannel *channel);

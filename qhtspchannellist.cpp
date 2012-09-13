@@ -35,17 +35,17 @@ QHtspChannel *QHtspChannelList::add(QHtsp *htsp, QHtspMessage &message)
     return channel;
 }
 
-QHtspChannel *QHtspChannelList::at(int i)
+QHtspChannel *QHtspChannelList::at(int i) const
 {
     return m_channels.at(i);
 }
 
-int QHtspChannelList::count()
+int QHtspChannelList::count() const
 {
     return m_channels.count();
 }
 
-int QHtspChannelList::indexOf(QHtspChannel *channel)
+int QHtspChannelList::indexOf(QHtspChannel *channel) const
 {
     return m_channels.indexOf(channel);
 }
