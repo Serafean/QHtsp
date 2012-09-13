@@ -32,7 +32,7 @@ public:
     
     QHtspChannel *at(int i) const;
     int count() const;
-    int indexOf() const;
+    int indexOf(QHtspChannel *channel) const;
     QHtspChannel *find(qint64 id) const;
 
 signals:

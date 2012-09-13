@@ -50,7 +50,7 @@ int QHtspChannelList::indexOf(QHtspChannel *channel) const
     return m_channels.indexOf(channel);
 }
 
-QHtspChannel *QHtspChannelList::find(qint64 id)
+QHtspChannel *QHtspChannelList::find(qint64 id) const
 {
     int i;
 
