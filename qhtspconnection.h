@@ -41,9 +41,9 @@ public:
     explicit QHtspConnection(QObject *parent = 0);
     ~QHtspConnection();
 
-    QString hostName();
-    bool isConnected();
-    quint16 port();
+    QString hostName() const;
+    bool isConnected() const;
+    quint16 port() const;
 
     void setHostName(QString hostName);
     void setHtspVersion(int version);

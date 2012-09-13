@@ -40,17 +40,17 @@ QHtspConnection::~QHtspConnection()
     delete m_socket;
 }
 
-QString QHtspConnection::hostName()
+QString QHtspConnection::hostName() const
 {
     return m_hostName;
 }
 
-bool QHtspConnection::isConnected()
+bool QHtspConnection::isConnected() const
 {
     return m_socket->state() == QAbstractSocket::ConnectedState;
 }
 
-quint16 QHtspConnection::port()
+quint16 QHtspConnection::port() const
 {
     return m_port;
 }

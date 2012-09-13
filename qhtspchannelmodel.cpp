@@ -128,12 +128,12 @@ int QHtspChannelModel::rowCount(const QModelIndex &/*parent*/) const
     return m_channels->count();
 }
 
-QHtspChannel *QHtspChannelModel::getChannelById(int id)
+QHtspChannel *QHtspChannelModel::getChannelById(int id) const
 {
     return m_channels->find(id);
 }
 
-QHtspChannel *QHtspChannelModel::getChannelByIndex(int i)
+QHtspChannel *QHtspChannelModel::getChannelByIndex(int i) const
 {
     return m_channels->at(i);
 }

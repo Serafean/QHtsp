@@ -46,8 +46,8 @@ public:
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
 
-    Q_INVOKABLE QHtspChannel *getChannelById(int id);
-    Q_INVOKABLE QHtspChannel *getChannelByIndex(int i);
+    Q_INVOKABLE QHtspChannel *getChannelById(int id) const;
+    Q_INVOKABLE QHtspChannel *getChannelByIndex(int i) const;
 
 private:
     QHtspChannelList *m_channels;
