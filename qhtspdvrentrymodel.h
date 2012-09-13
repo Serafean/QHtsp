@@ -44,8 +44,8 @@ public:
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
 
-    Q_INVOKABLE QHtspDvrEntry *getDvrEntryById(int id);
-    Q_INVOKABLE QHtspDvrEntry *getDvrEntryByIndex(int index);
+    Q_INVOKABLE QHtspDvrEntry *getDvrEntryById(int id) const;
+    Q_INVOKABLE QHtspDvrEntry *getDvrEntryByIndex(int index) const;
     
 private:
     QHtspDvrEntryList *m_dvrEntries;

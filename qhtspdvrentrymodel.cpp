@@ -134,12 +134,12 @@ int QHtspDvrEntryModel::rowCount(const QModelIndex &/*parent*/) const
     return m_dvrEntries->count();
 }
 
-QHtspDvrEntry *QHtspDvrEntryModel::getDvrEntryById(int id)
+QHtspDvrEntry *QHtspDvrEntryModel::getDvrEntryById(int id) const
 {
     return m_dvrEntries->find(id);
 }
 
-QHtspDvrEntry *QHtspDvrEntryModel::getDvrEntryByIndex(int index)
+QHtspDvrEntry *QHtspDvrEntryModel::getDvrEntryByIndex(int index) const
 {
     return m_dvrEntries->at(index);
 }
