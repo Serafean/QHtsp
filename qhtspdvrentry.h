@@ -102,15 +102,15 @@ public:
     QHtspDvrEntry(QHtspMessage &message, QHtsp *htsp, QObject *parent = 0);
     QHtspDvrEntry(const QHtspDvrEntry &dvrEntry, QObject *parent = 0);
     
-    QHtspChannel *channel();
-    qint64 channelId();
-    QString description();
-    QString error();
-    qint64 id();
-    State state();
-    QDateTime start();
-    QDateTime stop();
-    QString title();
+    QHtspChannel *channel() const;
+    qint64 channelId() const;
+    QString description() const;
+    QString error() const;
+    qint64 id() const;
+    State state() const;
+    QDateTime start() const;
+    QDateTime stop() const;
+    QString title() const;
 
     void setChannelId(qint64 channelId);
     void setDescription(QString description);

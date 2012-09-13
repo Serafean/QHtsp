@@ -40,47 +40,47 @@ QHtspDvrEntry::QHtspDvrEntry(const QHtspDvrEntry &dvrEntry, QObject *parent) :
     _connectSignals();
 }
 
-QHtspChannel *QHtspDvrEntry::channel()
+QHtspChannel *QHtspDvrEntry::channel() const
 {
     return d->channel();
 }
 
-qint64 QHtspDvrEntry::channelId()
+qint64 QHtspDvrEntry::channelId() const
 {
     return d->channelId;
 }
 
-QString QHtspDvrEntry::description()
+QString QHtspDvrEntry::description() const
 {
     return d->description;
 }
 
-QString QHtspDvrEntry::error()
+QString QHtspDvrEntry::error() const
 {
     return d->error;
 }
 
-qint64 QHtspDvrEntry::id()
+qint64 QHtspDvrEntry::id() const
 {
     return d->id;
 }
 
-QHtspDvrEntry::State QHtspDvrEntry::state()
+QHtspDvrEntry::State QHtspDvrEntry::state() const
 {
     return (QHtspDvrEntry::State)d->state;
 }
 
-QDateTime QHtspDvrEntry::start()
+QDateTime QHtspDvrEntry::start() const
 {
     return d->start;
 }
 
-QDateTime QHtspDvrEntry::stop()
+QDateTime QHtspDvrEntry::stop() const
 {
     return d->stop;
 }
 
-QString QHtspDvrEntry::title()
+QString QHtspDvrEntry::title() const
 {
     return d->title;
 }
