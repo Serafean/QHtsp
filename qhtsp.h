@@ -42,14 +42,14 @@ class QHTSPSHARED_EXPORT QHtsp : public QObject
 public:
     QHtsp(QObject *parent = 0);
 
-    QHtspChannelList *channels();
-    QHtspDvrEntryList *dvrEntries();
-    QHtspEventList *events();
-    int htspVersion();
-    bool isSyncCompleted();
-    QString serverName();
-    QString serverVersion();
-    QHtspTagList *tags();
+    QHtspChannelList *channels() const;
+    QHtspDvrEntryList *dvrEntries() const;
+    QHtspEventList *events() const;
+    int htspVersion() const;
+    bool isSyncCompleted() const;
+    QString serverName() const;
+    QString serverVersion() const;
+    QHtspTagList *tags() const;
 
     void addDvrEntry(qint64 eventId);
     virtual void authenticate(QString username, QString password);

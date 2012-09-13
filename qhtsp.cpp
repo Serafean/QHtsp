@@ -27,42 +27,42 @@ QHtsp::QHtsp(QObject *parent) :
     _createLists();
 }
 
-QHtspChannelList *QHtsp::channels()
+QHtspChannelList *QHtsp::channels() const
 {
     return m_channels;
 }
 
-QHtspDvrEntryList *QHtsp::dvrEntries()
+QHtspDvrEntryList *QHtsp::dvrEntries() const
 {
     return m_dvrEntries;
 }
 
-QHtspEventList *QHtsp::events()
+QHtspEventList *QHtsp::events() const
 {
     return m_events;
 }
 
-int QHtsp::htspVersion()
+int QHtsp::htspVersion() const
 {
     return m_htspVersion;
 }
 
-bool QHtsp::isSyncCompleted()
+bool QHtsp::isSyncCompleted() const
 {
     return m_isSyncCompleted;
 }
 
-QString QHtsp::serverName()
+QString QHtsp::serverName() const
 {
     return m_serverName;
 }
 
-QString QHtsp::serverVersion()
+QString QHtsp::serverVersion() const
 {
     return m_serverVersion;
 }
 
-QHtspTagList *QHtsp::tags()
+QHtspTagList *QHtsp::tags() const
 {
     return m_tags;
 }
